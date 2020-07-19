@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>JavaScript Drum Kit</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script defer src="assets/javascript/logic.js"></script>
+  </head>
+  <body class="grid-container">
+    <header><h1>JavaScript Drum Kit</h1></header>
+    <main id="main-content">
+      <h2>Press the key or click on the drum pad to play the sound.</h2>
+      <section id="keys">
+        <div class="key" id="aKey" onmousedown="clickDrum(this.id)">
+          <kbd>A</kbd>
+          <div class="sound">clap</div>
+        </div>
+        <div class="key" id="sKey" onmousedown="clickDrum(this.id)">
+          <kbd>S</kbd><span class="sound">hihat</span>
+        </div>
+        <div class="key" id="dKey" onmousedown="clickDrum(this.id)">
+          <!-- onmouseup="setTimeout(reformClickedKey(),6000)" -->
+          <kbd>D</kbd><span class="sound">kick</span>
+        </div>
+        <div class="key" id="fKey" onmousedown="clickDrum(this.id)">
+          <kbd>F</kbd><span class="sound">openhat</span>
+        </div>
+        <div class="key" id="gKey" onmousedown="clickDrum(this.id)">
+          <kbd>G</kbd><span class="sound">boom</span>
+        </div>
+        <div class="key" id="hKey" onmousedown="clickDrum(this.id)">
+          <kbd>H</kbd><span class="sound">ride</span>
+        </div>
+        <div class="key" id="jKey" onmousedown="clickDrum(this.id)">
+          <kbd>J</kbd><span class="sound">snare</span>
+        </div>
+        <div class="key" id="kKey" onmousedown="clickDrum(this.id)">
+          <kbd>K</kbd><span class="sound">tom</span>
+        </div>
+        <div class="key" id="lKey" onmousedown="clickDrum(this.id)">
+          <kbd>L</kbd><span class="sound">tink</span>
+        </div>
+      </section>
+    </main>
+    <footer>2020</footer>
+  </body>
+</html>
+
+<!-- // a = 65, s = 83, d = 68, f = 70, g = 71, h = 72, j = 74, k = 75, l = 76 -->
