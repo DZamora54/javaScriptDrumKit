@@ -1,12 +1,41 @@
-let clap = new Audio("../assets/sounds/clap.wav");
-let hihat = new Audio("../assets/sounds/hihat.wav");
-let kick = new Audio("../assets/sounds/kick.wav");
-let openhat = new Audio("../assets/sounds/openhat.wav");
-let boom = new Audio("../assets/sounds/boom.wav");
-let ride = new Audio("../assets/sounds/ride.wav");
-let snare = new Audio("../assets/sounds/snare.wav");
-let tom = new Audio("../assets/sounds/tom.wav");
-let tink = new Audio("../assets/sounds/tink.wav");
+// let clap = new Audio("../assets/sounds/clap.wav");
+// let hihat = new Audio("../assets/sounds/hihat.wav");
+// let kick = new Audio("../assets/sounds/kick.wav");
+// let openhat = new Audio("../assets/sounds/openhat.wav");
+// let boom = new Audio("../assets/sounds/boom.wav");
+// let ride = new Audio("../assets/sounds/ride.wav");
+// let snare = new Audio("../assets/sounds/snare.wav");
+// let tom = new Audio("../assets/sounds/tom.wav");
+// let tink = new Audio("../assets/sounds/tink.wav");
+
+// Changing where the audio files are linked to
+let clap = new Audio(
+  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/clap.wav"
+);
+let hihat = new Audio(
+  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/hihat.wav"
+);
+let kick = new Audio(
+  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/kick.wav"
+);
+let openhat = new Audio(
+  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/openhat.wav"
+);
+let boom = new Audio(
+  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/boom.wav"
+);
+let ride = new Audio(
+  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/ride.wav"
+);
+let snare = new Audio(
+  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/snare.wav"
+);
+let tom = new Audio(
+  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/tom.wav"
+);
+let tink = new Audio(
+  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/tink.wav"
+);
 let sound;
 
 /* START ADD EVENT LISTENER FOR KEYDOWN */
