@@ -47,40 +47,47 @@ document.addEventListener("keyup", (e) => reformKey(e.key));
 let playDrum = (e) => {
   console.log(`${e.keyCode} was pressed`);
   getSound(e.keyCode);
+  sound.currentTime = 0;
   sound.play();
   transformKey(e.key);
 };
 /* END PLAYDRUM */
 
+/* START CLICK DRUM */
 let clickDrum = (clickedId) => {
   console.log(clickedId);
   getClickedSound(clickedId);
+  sound.currentTime = 0;
   transformClickedKey(clickedId);
   sound.play();
   setTimeout(reformClickedKey, 500, clickedId);
 };
+/* END CLICK DRUM */
 
 /* START TRANSFORM KEYS */
 let transformKey = (key) => {
-  console.log("key transforming");
+  console.log(`${key}Key`);
   document.getElementById(`${key}Key`).classList.add("playing");
 };
 /* END TRANSFORM KEYS */
 
+/* START TRANSFORM CLICKED KEYS */
 let transformClickedKey = (key) => {
-  console.log("key transforming");
   document.getElementById(key).classList.add("playing");
 };
+/* END TRANSFORM CLICKED KEYS */
 
+/* START REFORM KEYS */
 let reformKey = (key) => {
   document.getElementById(`${key}Key`).classList.remove("playing");
 };
+/* END REFORM KEYS */
 
+/* START REFORM CLICKED KEYS */
 let reformClickedKey = (key) => {
-  console.log("reforming Key");
-  console.log("still transformed");
   document.getElementById(key).classList.remove("playing");
 };
+/* END REFORM CLICKED KEYS */
 
 /* START GETS THE CORRECT SOUND FILE FOR THE GIVEN KEYCODE */
 let getSound = (keyCode) => {
@@ -118,6 +125,7 @@ let getSound = (keyCode) => {
 };
 /* END GETS THE CORRECT SOUND FILE FOR THE GIVEN KEYCODE */
 
+/* START GET THE CLICKED SOUND */
 let getClickedSound = (keyCode) => {
   switch (keyCode) {
     case "aKey":
@@ -151,5 +159,5 @@ let getClickedSound = (keyCode) => {
       sound = null;
   }
 };
-
+/* END GET THE CLICKED SOUND */
 // a = 65, s = 83, d = 68, f = 70, g = 71, h = 72, j = 74, k = 75, l = 76
